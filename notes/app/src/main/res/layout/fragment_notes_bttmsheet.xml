@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    app:behavior_peekHeight="40dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="@dimen/_40sdp"    >
+
+        <ImageView
+            android:id="@+id/imgMore"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_gravity="center"
+            app:tint="@color/ColorWhite"
+            android:src="@drawable/ic_rag"
+            android:layout_height="@dimen/_24sdp">
+
+        </ImageView>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        >
+
+        <FrameLayout
+            android:id="@+id/fnote1"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/note_color1"></View>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:id="@+id/img1"
+                android:layout_height="@dimen/_20sdp">
+
+            </ImageView>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fnote2"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/note_color2"></View>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:id="@+id/img2"
+                android:layout_height="@dimen/_20sdp">
+
+            </ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fnote3"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/_20sdp"
+
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/note_color3"></View>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:id="@+id/img3"
+                android:layout_height="@dimen/_20sdp">
+
+            </ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fnote4"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/note_color4"></View>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:id="@+id/img4"
+                android:layout_height="@dimen/_20sdp">
+
+            </ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fnote5"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view5"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/note_color5"></View>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:id="@+id/img5"
+                android:layout_height="@dimen/_20sdp">
+
+            </ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fnote6"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+         <View
+                android:id="@+id/view6"
+             android:layout_width="@dimen/_20sdp"
+             android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/note_color6"></View>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:id="@+id/img6"
+                android:layout_height="@dimen/_20sdp">
+
+            </ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fnote7"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view7"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/note_color7"></View>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:id="@+id/img7"
+                android:layout_height="@dimen/_20sdp">
+
+            </ImageView>
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="textEnd"
+            android:paddingEnd="@dimen/_50sdp"
+            app:layout_constraintTop_toBottomOf="@id/NoteTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/ColorWhite"
+            android:text="Pick Color"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/_10ssp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutImage"
+        android:layout_width="match_parent"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/layoutAddImage"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:layout_margin="@dimen/_1sdp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/ic_image"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Add Image"
+                android:textColor="@color/ColorWhite"
+                android:textSize="@dimen/_10ssp"
+                ></TextView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutDelNote"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_1sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="end|center"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/ic_baseline_delete_24">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/ColorWhite"
+                android:text="Delete Note"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/_10ssp"
+                android:layout_height="wrap_content"></TextView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
